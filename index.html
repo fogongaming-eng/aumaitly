@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aumaitly — Le copilote des pros du mariage</title>
+  <meta name="description" content="Aumaitly centralise les demandes Mariages.net des prestataires de mariage, prépare des réponses qu'ils valident et relance les couples au bon moment.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { --bg: #ffffff; --fg: #0a0a0a; --muted: #6b6b6b; --line: #e5e5e5; --soft: #f5f5f5; --ok: #047857; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    a { color: inherit; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    header { border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { font-weight: 700; font-size: 18px; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+    .logo { width: 28px; height: 28px; border-radius: 8px; background: var(--fg); color: #fff; display: grid; place-items: center; font-size: 15px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: 14px; }
+    nav a:hover { color: var(--fg); }
+    .hero { padding: 72px 0 48px; }
+    .pill { display: inline-block; font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
+    h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin: 18px 0 16px; letter-spacing: -0.02em; }
+    .lead { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; padding: 8px 0 56px; }
+    .card { border: 1px solid var(--line); border-radius: 12px; padding: 20px; background: var(--bg); }
+    .card h2 { font-size: 16px; margin: 0 0 6px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    section.google { background: var(--soft); border-radius: 16px; padding: 28px; margin-bottom: 56px; }
+    section.google h2 { margin: 0 0 10px; font-size: 22px; }
+    section.google ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); }
+    section.google li { margin: 6px 0; }
+    .ok { color: var(--ok); font-weight: 600; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; }
+    footer a { color: var(--muted); }
+    @media (max-width: 560px) { nav a:not(.keep) { display: none; } .hero { padding-top: 48px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./"><span class="logo" aria-hidden="true">A</span>Aumaitly</a>
+      <nav aria-label="Navigation principale">
+        <a href="#google">Données Google</a>
+        <a class="keep" href="./confidentialite.html">Confidentialité</a>
+        <a href="./conditions.html">Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="pill">Pour les prestataires présents sur Mariages.net</span>
+      <h1>Répondez à chaque demande de mariage en deux minutes.</h1>
+      <p class="lead">Aumaitly reçoit vos demandes Mariages.net, prépare une réponse à votre image que vous validez, relance les couples au bon moment et range votre boîte mail. Vous signez plus de contrats, sans y passer vos soirées.</p>
+    </section>
+
+    <div class="grid">
+      <div class="card"><h2>Toutes vos demandes au même endroit</h2><p>Les demandes reçues par e-mail deviennent des fiches claires : couple, date, lieu, budget, historique des échanges.</p></div>
+      <div class="card"><h2>Des réponses que vous validez</h2><p>Un brouillon personnalisé est préparé pour chaque demande. Rien ne part sans votre validation explicite.</p></div>
+      <div class="card"><h2>Relances au bon moment</h2><p>Aumaitly vous rappelle les couples à relancer et prépare le message, selon le rythme que vous choisissez.</p></div>
+      <div class="card"><h2>Boîte Gmail rangée</h2><p>Si vous le choisissez, vos e-mails sont classés par des libellés : demandes, couples, administratif, publicités.</p></div>
+      <div class="card"><h2>Agenda et devis</h2><p>Les rendez-vous validés vont dans votre Google Agenda ; les devis sont calculés depuis vos propres tarifs.</p></div>
+      <div class="card"><h2>Vos données restent à vous</h2><p>Export complet à tout moment, suppression réelle du compte, aucune revente ni publicité.</p></div>
+    </div>
+
+    <section class="google" id="google">
+      <h2>Comment Aumaitly utilise votre compte Google</h2>
+      <p>La connexion à Google est facultative et se fait service par service : vous cochez ce que vous autorisez, sur l'écran de Google.</p>
+      <ul>
+        <li><strong>Connexion</strong> : votre adresse e-mail Google sert à vous identifier.</li>
+        <li><strong>Gmail</strong> (si vous le cochez) : lecture de la boîte de réception pour classer vos e-mails et poser des libellés. <span class="ok">Aumaitly n'envoie, n'archive et ne supprime aucun e-mail.</span></li>
+        <li><strong>Google Agenda, Sheets, Docs</strong> (si vous les cochez) : création des rendez-vous que vous validez, du tableur de suivi des demandes et du document de comptes rendus.</li>
+        <li>Les informations reçues des API Google sont utilisées uniquement pour ces fonctions, dans le respect des <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">règles de Google relatives aux données utilisateur</a>, y compris les exigences d'utilisation limitée.</li>
+      </ul>
+      <p style="margin-top:16px">Tous les détails : <a href="./confidentialite.html">politique de confidentialité</a>. Vous pouvez retirer l'accès à tout moment depuis Aumaitly ou sur <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Aumaitly — contact : <a href="mailto:contact.aumaitly@gmail.com">contact.aumaitly@gmail.com</a></span>
+      <span><a href="./confidentialite.html">Politique de confidentialité</a> · <a href="./conditions.html">Conditions d'utilisation</a> · <a href="./mentions-legales.html">Mentions légales</a></span>
+    </div>
+  </footer>
+</body>
+</html>
